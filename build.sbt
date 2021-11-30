@@ -63,7 +63,7 @@ pomExtra := (
     </developer>
   </developers>)
 
-ThisBuild / githubWorkflowJavaVersions := Seq("zulu@1.8", "zulu@11")
+ThisBuild / githubWorkflowJavaVersions := Seq("zulu@1.8", "zulu@1.11")
 ThisBuild / githubWorkflowTargetTags ++= Seq("v*")
 ThisBuild / githubWorkflowPublishTargetBranches := Seq(
   RefPredicate.Equals(Ref.Branch("main")),
