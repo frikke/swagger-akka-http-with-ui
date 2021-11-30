@@ -4,7 +4,7 @@ organization := "com.github.swagger-akka-http"
 
 name := "swagger-akka-http-with-ui"
 
-val akkaVersion = "2.6.16"
+val akkaVersion = "2.6.17"
 val akkaHttpVersion = "10.2.7"
 val jacksonVersion = "2.13.0"
 val swaggerVersion = "2.1.11"
@@ -63,7 +63,7 @@ pomExtra := (
     </developer>
   </developers>)
 
-ThisBuild / githubWorkflowJavaVersions := Seq("adopt@1.8", "adopt@1.11")
+ThisBuild / githubWorkflowJavaVersions := Seq("zulu@1.8", "zulu@11")
 ThisBuild / githubWorkflowTargetTags ++= Seq("v*")
 ThisBuild / githubWorkflowPublishTargetBranches := Seq(
   RefPredicate.Equals(Ref.Branch("main")),
