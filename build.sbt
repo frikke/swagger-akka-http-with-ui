@@ -1,4 +1,5 @@
 import sbt.Keys.libraryDependencies
+import sbtghactions.JavaSpec.Distribution.Zulu
 
 organization := "com.github.swagger-akka-http"
 
@@ -63,7 +64,7 @@ pomExtra := (
     </developer>
   </developers>)
 
-ThisBuild / githubWorkflowJavaVersions := Seq("zulu@1.8", "zulu@1.11")
+ThisBuild / githubWorkflowJavaVersions := Seq(JavaSpec(Zulu, "8"), JavaSpec(Zulu, "11"))
 ThisBuild / githubWorkflowTargetTags ++= Seq("v*")
 ThisBuild / githubWorkflowPublishTargetBranches := Seq(
   RefPredicate.Equals(Ref.Branch("main")),
@@ -77,7 +78,8 @@ ThisBuild / githubWorkflowPublish := Seq(
       "PGP_PASSPHRASE" -> "${{ secrets.PGP_PASSPHRASE }}",
       "PGP_SECRET" -> "${{ secrets.PGP_SECRET }}",
       "SONATYPE_PASSWORD" -> "${{ secrets.SONATYPE_PASSWORD }}",
-      "SONATYPE_USERNAME" -> "${{ secrets.SONATYPE_USERNAME }}"
+      "SONATYPE_USERNAME" -> "${{ secrets.SONATYPE_USERNAME }}",
+      "CI_SNAPSHOT_RELEASE" -> "+publishSigned"
     )
   )
 )
