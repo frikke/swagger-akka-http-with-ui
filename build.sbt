@@ -21,8 +21,8 @@ update / checksums := Nil
 lazy val root = (project in file("."))
   .settings(
     libraryDependencies ++= Seq("com.github.swagger-akka-http" %% "swagger-akka-http" % "2.6.0",
-      "org.webjars" % "webjars-locator" % "0.41",
-      "org.webjars" % "swagger-ui" % "3.50.0",
+      "org.webjars" % "webjars-locator" % "0.42",
+      "org.webjars" % "swagger-ui" % "4.1.3",
       "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test,
       "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion % Test,
       "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
