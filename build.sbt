@@ -5,10 +5,10 @@ organization := "com.github.swagger-akka-http"
 
 name := "swagger-akka-http-with-ui"
 
-val akkaVersion = "2.6.16"
+val akkaVersion = "2.6.18"
 val akkaHttpVersion = "10.2.7"
-val jacksonVersion = "2.13.0"
-val swaggerVersion = "2.1.11"
+val jacksonVersion = "2.13.1"
+val swaggerVersion = "2.1.12"
 
 val scala213 = "2.13.7"
 val slf4jVersion = "1.7.32"
