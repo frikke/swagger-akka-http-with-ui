@@ -11,7 +11,7 @@ val jacksonVersion = "2.13.1"
 val swaggerVersion = "2.1.12"
 
 val scala213 = "2.13.8"
-val slf4jVersion = "1.7.33"
+val slf4jVersion = "1.7.36"
 
 ThisBuild / scalaVersion := scala213
 ThisBuild / crossScalaVersions := Seq(scala213, "2.12.15")
