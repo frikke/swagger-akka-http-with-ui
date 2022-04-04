@@ -92,7 +92,7 @@ class SwaggerHttpWithUiServiceTest
           val str = responseAs[String]
           val response = Jsoup.parse(str)
           val scriptTags = response.getElementsByTag("script")
-          scriptTags.get(2).toString should include(s"""url: "swagger.json"""")
+          scriptTags.get(2).toString should include("swagger-initializer.js")
         }
 
       }
