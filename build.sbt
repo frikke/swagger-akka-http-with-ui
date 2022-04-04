@@ -5,10 +5,10 @@ organization := "com.github.swagger-akka-http"
 
 name := "swagger-akka-http-with-ui"
 
-val akkaVersion = "2.6.16"
+val akkaVersion = "2.6.19"
 val akkaHttpVersion = "10.2.9"
-val jacksonVersion = "2.13.1"
-val swaggerVersion = "2.1.12"
+val jacksonVersion = "2.13.2"
+val swaggerVersion = "2.2.0"
 
 val scala213 = "2.13.8"
 val slf4jVersion = "1.7.36"
@@ -20,17 +20,17 @@ update / checksums := Nil
 
 lazy val root = (project in file("."))
   .settings(
-    libraryDependencies ++= Seq("com.github.swagger-akka-http" %% "swagger-akka-http" % "2.6.0",
-      "org.webjars" % "webjars-locator" % "0.42",
-      "org.webjars" % "swagger-ui" % "4.1.3",
+    libraryDependencies ++= Seq("com.github.swagger-akka-http" %% "swagger-akka-http" % "2.7.0",
+      "org.webjars" % "webjars-locator" % "0.45",
+      "org.webjars" % "swagger-ui" % "4.10.3",
       "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test,
       "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion % Test,
       "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
-      "org.scalatest" %% "scalatest" % "3.2.10" % Test,
-      "org.json4s" %% "json4s-native" % "4.0.3" % Test,
+      "org.scalatest" %% "scalatest" % "3.2.11" % Test,
+      "org.json4s" %% "json4s-native" % "4.0.4" % Test,
       "org.jsoup" % "jsoup" % "1.14.3" % Test,
       "jakarta.ws.rs" % "jakarta.ws.rs-api" % "3.0.0" % Test,
-      "joda-time" % "joda-time" % "2.10.13" % Test,
+      "joda-time" % "joda-time" % "2.10.14" % Test,
       "org.joda" % "joda-convert" % "2.2.2" % Test,
       "org.slf4j" % "slf4j-simple" % slf4jVersion % Test
 
