@@ -22,7 +22,7 @@ lazy val root = (project in file("."))
   .settings(
     libraryDependencies ++= Seq("com.github.swagger-akka-http" %% "swagger-akka-http" % "2.7.0",
       "org.webjars" % "webjars-locator" % "0.45",
-      "org.webjars" % "swagger-ui" % "4.10.3",
+      "org.webjars" % "swagger-ui" % "4.6.2",
       "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test,
       "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion % Test,
       "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
